@@ -5,60 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="bg-image">
-        <div class="heading">
-            <img src="" alt="">
+        <div class="logo">
+            <img src="src/odin-lined.png" alt="">
             <h1>ODIN</h1>
         </div>
         <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
-                href="https://unsplash.com/">Unsplash</a></p>
+                href="https://unsplash.com/">Unsplash</a>
+        </p>
     </div>
     <div class="container">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize
-            your deepest dreams. <br> Sign up now to get started. <br><br> You <em>know</em> you want to.</p>
-    </div>
-    <div class="form-container">
-        <form action="" method="get" id="signUpForm">
-            <legend>Let's do this!</legend>
-            <div class="form-row">
-                <div class="form-cell">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
+        <div class="disclaimer">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams. <br> Sign up now to get started. <br><br> You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-container">
+            <form action="" method="get" id="signUpForm">
+                <legend>Let's do this!</legend>
+                <div class="form-row">
+                    <div class="form-cell">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="form-cell">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
                 </div>
-                <div class="form-cell">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
+                <div class="form-row">
+                    <div class="form-cell">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-cell">
+                        <label for="phone-num">PHONE NUMBER</label>
+                        <input type="text" name="phone-num" id="phone-num">
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-cell">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                <div class="form-row">
+                    <div class="form-cell">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-cell">
+                        <label for="confirm-pass">CONFIRM PASSWORD</label>
+                        <input type="text" name="confirm-pass" id="confirm-pass">
+                    </div>
                 </div>
-                <div class="form-cell">
-                    <label for="phone-num">PHONE NUMBER</label>
-                    <input type="text" name="phone-num" id="phone-num">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-cell">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <div class="form-cell">
-                    <label for="confirm-pass">CONFIRM PASSWORD</label>
-                    <input type="text" name="confirm-pass" id="confirm-pass">
-                </div>
-            </div>
-        </form>
-    </div>
-    <button form="signUpForm" type="submit">Create Account</button>
-    <div class="account-exists">
-        <p>Already have an account? <a href="">Log in</a></p>
+            </form>
+        </div>
+        <button form="signUpForm" type="submit">Create Account</button>
+        <div class="account-exists">
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
     </div>
 </body>
 
