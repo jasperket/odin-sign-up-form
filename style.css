@@ -62,4 +62,36 @@ body {
 
 .container {
     flex: 6;
+    background-color: whitesmoke;
+}
+
+.disclaimer p {
+    margin: 12rem 5rem 7rem 5rem;
+    max-width: 55ch;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.form-container {
+    background-color: white;
+    padding: 2rem 5rem 3rem 5rem;
+}
+
+form legend {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row:not(:last-child) {
+    margin-bottom: 2.25rem;
+}
+
+.form-cell {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
 }
