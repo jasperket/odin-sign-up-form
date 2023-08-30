@@ -35,7 +35,7 @@ body {
 .logo {
     display: flex;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     align-items: center;
     margin-top: 20rem;
 }
@@ -118,6 +118,39 @@ form legend {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 
-.form-cell input:invalid {
+.form-cell input:invalid,
+.invalid {
     border-color: red;
+}
+
+.form-button {
+    margin: 3rem 5rem 3rem;
+    padding: 1.3rem 5rem;
+
+    background-color: #596d48;
+    color: white;
+
+    border: none;
+    border-radius: 7.5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.account-exists p {
+    margin: 0;
+    margin-left: 5rem;
+    font-size: 1.75rem;
+}
+
+.account-exists p a {
+    color: #5b6f4a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.account-exists p a:hover {
+    text-decoration: underline;
 }
