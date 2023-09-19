@@ -44,13 +44,21 @@
                     </div>
                     <div class="form-cell">
                         <label for="phone-num">PHONE NUMBER</label>
-                        <input type="text" name="phone-num" id="phone-num">
+                        <input type="text" name="phone-num" id="phone-num" placeholder="Contains 11 digits">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-cell">
                         <label for="password">PASSWORD</label>
                         <input type="password" name="password" id="password">
+                        <div class="password-requirements">
+                            <p>Password must contain:</p>
+                            <ul>
+                                <li>At least 8 characters</li>
+                                <li>Contain both uppercase and lowercase letters</li>
+                                <li>Include numbers (e.g., 0-9)</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="form-cell">
                         <label for="confirm-pass">CONFIRM PASSWORD</label>
@@ -64,6 +72,8 @@
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
