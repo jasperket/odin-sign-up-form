@@ -95,7 +95,7 @@ form legend {
     display: flex;
     flex-direction: column;
     margin-right: 8rem;
-    position: relative
+    position: relative;
 }
 
 .form-cell label {
@@ -119,9 +119,8 @@ form legend {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 
-.form-cell input:invalid,
 .invalid {
-    border-color: red;
+    border-color: red !important;
 }
 
 .form-button {
@@ -159,11 +158,27 @@ form legend {
 .password-requirements {
     border: 2px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
+    padding: 2rem;
     background-color: #f9f9f9;
     font-size: 1.25rem;
     position: absolute;
     top: 6rem;
     opacity: 0;
     transition: opacity 0.3s ease;
+    display: none;
+}
+
+.password-requirements p,
+.password-requirements ul {
+    margin: 0;
+}
+
+.password-requirements ul {
+    padding-left: 2rem;
+}
+
+#invalid_input {
+    display: none;
+    font-size: 1.5rem;
+    font-style: italic;
 }
