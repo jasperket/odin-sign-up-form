@@ -17,15 +17,14 @@ html {
 body {
     display: flex;
     flex-direction: row;
-    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 .bg-image {
     flex: 3;
     background: url(src/background.jpg);
     background-size: cover;
-    min-height: 100vh;
     color: white;
     display: flex;
     flex-direction: column;
